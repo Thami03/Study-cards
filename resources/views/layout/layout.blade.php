@@ -19,8 +19,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sistema queijaria</title>
-
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
@@ -46,26 +44,46 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Study-Cards </div>
+                <div class="sidebar-brand-text mx-3">Study-Cards  </div>
             </a>
 
             <hr class="sidebar-divider my-0">
 
             <li class="nav-item">
-                <a class="nav-link" ">
+                <a class="nav-link" href="index">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Inicio</span></a>
+                    <span>Home</span></a>
             </li>
-
+<hr class="sidebar-divider my-0">
         
             <li class="nav-item">
-                <a class="nav-link" ">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Disciplinas</span></a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                   
+                     <i class="fas fa-fw fa-folder"></i>
+                    <span>Disciplinas</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">menu:</h6>
+                        <a class="collapse-item" href="/cienciashumana">Ciências Humanas</a>
+                        <a class="collapse-item" href="/cienciasnatureza">Ciências da Natureza</a>              
+                        <a class="collapse-item" href="/linguagens">Linguagens e Códigos</a>              
+                        <a class="collapse-item" href="/matematica">Matemática</a>              
+
+                    </div>
+                </div>
             </li>
+ <hr class="sidebar-divider my-0">
 
+            <li class="nav-item">
+                <a class="nav-link" href="/criarcards">
+                     <i class="fas fa-fw fa-cog"></i>
+                    <span>Criar Cards</span>
+                </a>
+               
+            </li>
           
-
 
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
