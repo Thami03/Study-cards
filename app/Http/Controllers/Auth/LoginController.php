@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
+use Socialite;
+use Exception;
 class LoginController extends Controller
 {
     /*
@@ -37,4 +39,37 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    public function redirectToProvider()
+    {
+        return Socialite::driver('google')->redirect();
+    }
+
+    
+    public function handleProviderCallback()
+    {
+
+        try{
+
+        $user = Socialite::driver('google')->user();
+        return '<h1>'. $user->email .'</h1>';
+
+        } catch(Exception $e){
+            return redirect()->to(route('login'));
+        }
+
+    }
+
+//
+  //  public function redirectToProvider()
+  //  {
+  //      return Socialite::driver('facebook')->redirect();
+  //  }
+
+  //  public function handleProviderCallback()
+  //  {
+  //      $user = Socialite::driver('facebook')->user();
+  //              return '<h1>'. $user->email .'</h1>';
+
+   // }
 }

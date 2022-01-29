@@ -34,6 +34,10 @@ Route::get('/linguagens', function () {
     return view('paginas.linguagens');
 });
 
+Route::get('/redacao', function () {
+    return view('paginas.redacao');
+});
+
 
 });
 
@@ -54,7 +58,13 @@ Route::get('/linguagens', function () {
 	//  return view('password.login');
 
 //});
+Route::get('auth/google', 'Auth\LoginController@redirectToProvider')->name('google');
+Route::get('auth/google/callback', 'Auth\LoginController@handleProviderCallback');
 
+//Route::get('auth/facebook', 'Auth\LoginController@redirectToProvider')->name('facebook');
+//Route::get('auth/facebook/callback', 'Auth\LoginController@handleProviderCallback');
+
+ 
 Route::get('/',  function(){
    return view('welcome');
 });

@@ -265,3 +265,33 @@ login
                                     </form>
                                 </div>
                             </li>
+
+
+
+ <a href="#" class="btn btn-facebook">
+                                        Login via Facebook
+
+                                    </a>
+
+                                     <div class="form-group row mb-0 py-md-1">
+                                <div class="col-md-8 offset-md-4">
+                                    <a href="{{route('google')}}" 
+                                    class="btn btn-google">
+                                        Login via Google
+
+                                    </a>
+                                
+                                </div>
+
+                            </div>
+
+                    CRIAR CARDS
+
+                             <li class="nav-item">
+                <a class="nav-link" href="/criarcards">
+                     <i class="fas fa-fw fa-cog"></i>
+                    <span>Criar Cards</span>
+                </a>
+               
+            </li>
+                            CRIAR CARDS

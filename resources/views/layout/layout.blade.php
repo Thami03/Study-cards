@@ -70,20 +70,14 @@
                         <a class="collapse-item" href="/cienciasnatureza">Ciências da Natureza</a>              
                         <a class="collapse-item" href="/linguagens">Linguagens e Códigos</a>              
                         <a class="collapse-item" href="/matematica">Matemática</a>              
+                        <a class="collapse-item" href="/redacao">Redação</a>              
 
                     </div>
                 </div>
             </li>
  <hr class="sidebar-divider my-0">
 
-            <li class="nav-item">
-                <a class="nav-link" href="/criarcards">
-                     <i class="fas fa-fw fa-cog"></i>
-                    <span>Criar Cards</span>
-                </a>
-               
-            </li>
-          
+           
 
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
